@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+  
+  <head>
+    <meta charset="utf-8" />
+    <title>My "Hello, World!" Page</title>
+    <link rel="stylesheet" href="final.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <header>
+    <a class="skip-link" href='#main'>Skip to content</a>
+    <h1 id="site-title" onclick="myFunction()">Cataloging Portfolio</h1>
+      <script>
+        function myFunction() {document.getElementById("site-title").style.background = "white";}
+      </script>
+  </header>
+
+  <body>
+    <div class="main-container">
+      <nav class="site-menu">
+        <ul>
+          <li>
+            <a href="finalhome.html">Home</a>
+          </li>
+          <li>
+            <a href="finalnintendo.html">Nintendo</a>
+          </li>
+          <li>
+            <a href="finalsony.html">Sony</a>
+          </li>
+          <li>
+            <a href="finaltabletop.html">Tabletop</a>
+          </li>
+        </ul>
+      </nav>
+    <div class="main-content">  
+    <main id="main">
+
+    <article>
+      <h1 id="article-title">MY BACKLOG OF SHAME</h1>
+    </br>
+  </br>
+</br>
+</br>
+ 
+      <h2>WELCOME!</h2>
+        
+      <div class="welcome">
+        <p>
+          Here is catalogued every game I own or otherwise have access to.<br>
+        <br>
+          I have completed an astonishingly small number of them. <br>
+      <br>
+          Each page accessible from the top navigation menu shows every title in my Nintendo, Sony, and Tabletop libraries, respectively. <br>
+    <br>
+          Each library is divided by console or format.<br>
+  <br>
+          Curious about a particular game?<br>
+<br>
+          Click the title to be taken to that game's Metacritic page to see what it's all about, and if it's any good.
+          </p>
+        </div>
+
+      </br>
+    </br>
+    </br>
+    </br>
+    </br>
+  </br>
+    
+     
+    </main> 
+    </article>
+</br>
+</br>
+</br>
+</br>
+  </div>
+  <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>  
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
+</body>
+<div id="footer">
+    Copyright 2021 Webmaster James Stanton jstanton@my.dom.edu<br>
+    <a href="#site-title"> Back to Top</a>
+  </div>
+</html>
